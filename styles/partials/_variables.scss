@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto+Slab:wght@400;500&display=swap');
+
+$main-font: 'Lora',
+serif;
+$second-font: 'Roboto Slab',
+serif;
+$bg-color: #212529;
+$main-color: #2FDDE0;
+$second-color: #08143E;
+$border-animation-duration: 3.5s;
+
+%displayflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+

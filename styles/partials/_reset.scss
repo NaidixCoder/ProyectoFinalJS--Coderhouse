@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+
+/* Agrego este reset, para pisar valores de bootstrap que no esta reseteando el (*selector universal) */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.swal2-container{
+    z-index: 999999 !important;
+}

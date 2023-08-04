@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Ventas</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="../img/logo.svg" alt="">
+        </div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a href="./menu.html" class="nav__a">Menu</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./ventas.html" class="nav__a active">Ventas</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./caja.html" class="nav__a">Gastos</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./calculadora.html" class="nav__a">Calculadora</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-ventas">
+        <section>
+            <div class="content__textbox">
+                <div class="codigo-content">
+                    <label for="codigoInput">Código</label>
+                    <input type="text" id="codigoInput" readonly>
+                </div>
+                
+                <div class="desc-content">
+                    <label for="descripcionInput">Descripción</label>
+                    <input type="text" id="descripcionInput" readonly>
+                </div>
+        
+                <div class="price-content">
+                    <label for="precioInput">Precio</label>
+                    <input type="text" id="precioInput" readonly>
+                </div>
+        
+                <div class="cant-content">  
+                    <label for="cantidadInput">Cantidad</label>
+                    <input type="number" id="cantidadInput" min="1" value="1">
+                </div>
+        
+                <button id="addToCart" class="btn">Agregar</button>
+                <button id="viewCart" class="btn">carrito</button>
+
+            </div>
+            <div class="content__listbox-wrapper">
+                <div class="content__listbox">
+                    <table id="productTable">
+                        <thead>
+                            <tr>
+                                <th class="col1">Codigo</th>
+                                <th class="col2">Descripcion</th>
+                                <th class="col3">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aqui se carga el contenido de JSON -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Carrito Modal -->
+    <div class="modalCart" id="carritoModal">
+        <div class="modalCart__content">
+            <div class="menuBar">
+                <span class="modalCart__close" id="closeModal">&times;</span>
+            </div>
+            <h2 class="subtitle">FACTURA</h2>
+            <table class="carrito-table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Cantidad</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="carritoBodyModal">
+                    <!-- Aquí se generarán las filas del carrito -->
+                </tbody>
+            </table>
+            <div class="botonesFactura">
+                <label for="totalInput">TOTAL=</label>
+                <input type="text" id="totalInput" readonly>
+                <button id="cerrarVenta">Facturar</button>
+                <button id="emptyCart">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana modal para las venta -->
+    <div class="modalCart modal" id="ventasModal">
+        <div class="modalCart__content">
+            <div class="menuBar">
+                <span class="modalCart__close" id="closeVentasModal">&times;</span>
+            </div>
+            <h2>Registro de ventas</h2>
+            <table class="ventas-table">
+                <thead>
+                    <tr>
+                        <th>Número de Venta</th>
+                        <th>Descripción</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="ventasBodyModal">
+                    <!-- Aquí se generarán las filas de los números de venta -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="../scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

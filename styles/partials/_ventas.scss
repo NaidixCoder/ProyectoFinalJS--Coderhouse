@@ -1,0 +1,188 @@
+.main-ventas {
+    display: flex;
+    align-items: start;
+    height: calc(100vh - 100px);
+
+    section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Contenedor TextBox */
+
+        .content__textbox {
+            margin-bottom: 1.3rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 1rem;
+            gap: 1.3rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+
+            label {
+                margin-bottom: 5px;
+            }
+
+            .cant-content,
+            .price-content,
+            .desc-content,
+            .codigo-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                #cantidadInput {
+                    width: 50px;
+                }
+
+                #precioInput,
+                #codigoInput {
+                    width: 80px;
+                }
+
+                #descripcionInput {
+                    width: 240px;
+                }
+
+                #descripcionInput,
+                #precioInput,
+                #codigoInput,
+                #cantidadInput {
+                    text-align: center;
+                    font-size: 1.05rem;
+                }
+            }
+            .btn {
+                flex: 1;
+                padding: .4rem;
+                width: 100%;
+                height: 2.2rem;
+                background-color: $bg-color;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                font-family: $second-font;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: .3s;
+                font-weight: 400;
+                letter-spacing: 2px;
+            
+                &:hover {
+                    color: #ff0;
+                    transition: .5s;
+                    box-shadow: 0 0 5px $main-color;
+            
+                }
+            }
+        }
+
+        /* Contenedor ListBox */
+        .content__listbox-wrapper {
+            height: 70%;
+            overflow: auto;
+
+            .content__listbox {
+                width: 100%;
+                margin: 0 auto;
+                background-color: #f0f0f0;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                padding: 8px;
+                border: 1px solid #ccc;
+            }
+
+            tr:hover {
+                background-color: #00408038;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.modalCart {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .modalCart__content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+
+        h2 {
+            padding-bottom: .5rem;
+
+        }
+
+        .carrito-table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th,
+            td {
+                padding: 8px;
+                border: 1px solid #ccc;
+            }
+
+            thead {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+        }
+    }
+
+    .modalCart__close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+.menuBar {
+    width: 100%;
+    height: 20px;
+}
+
+.botonesFactura {
+    padding-block: 1rem;
+}

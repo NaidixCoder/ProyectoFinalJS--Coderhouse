@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="../img/logo.svg" alt="">
+        </div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a href="./menu.html" class="nav__a">Menu</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./ventas.html" class="nav__a">Ventas</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./caja.html" class="nav__a">Gastos</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./calculadora.html" class="nav__a active">Calculadora</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-calc">
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="calculator-buttons">
+                <button class="calculator-number">7</button>
+                <button class="calculator-number">8</button>
+                <button class="calculator-number">9</button>
+                <button class="calculator-operator">/</button>
+                <button class="calculator-number">4</button>
+                <button class="calculator-number">5</button>
+                <button class="calculator-number">6</button>
+                <button class="calculator-operator">*</button>
+                <button class="calculator-number">1</button>
+                <button class="calculator-number">2</button>
+                <button class="calculator-number">3</button>
+                <button class="calculator-operator">-</button>
+                <button class="calculator-number">0</button>
+                <button class="calculator-operator">.</button>
+                <button class="calculator-operator">+</button>
+                <button id="clear">C</button>
+                <button id="equals">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/calculadora.js"></script>
+</body>
+
+</html>

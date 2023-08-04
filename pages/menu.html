@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="../img/logo.svg" alt="">
+        </div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a href="#" class="nav__a active">Menu</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./ventas.html" class="nav__a">Ventas</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./caja.html" class="nav__a">Gastos</a>
+                </li>
+                <li class="nav__li">
+                    <a href="./calculadora.html" class="nav__a">Calculadora</a>
+                </li>
+                <li class="nav__li">
+                    <a href="../index.html" class="nav__a" id="logoutLink">Cerrar sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-menu">
+        <!-- Card 1 -->
+        <article class="card ventas">
+            <div class="card__img">
+                <img class="card-img" src="../img/ventas.png" alt="">
+            </div>
+            <div class="card__text">
+                <h2 class="subtitle">Reporte de ventas</h2>
+                <p id="totalVentas">Total vendido: $ 00.00</p>
+                <button id="verVentas">Ver Ventas</button>
+            </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card gastos">
+            <div class="card__img">
+                <img class="card-img" src="../img/gastos.png" alt="">
+            </div>
+            <div class="card__text">
+                <h2 class="subtitle">Reporte de gastos</h2>
+                <p id="totalGastos">Egresos: $ 00.00</p>
+                <button id="verGastos">Ver gastos</button>
+            </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card saldo">
+            <div class="card__img">
+                <img class="card-img" src="../img/balance.png" alt="">
+            </div>
+            <div class="card__text">
+                <h2 class="subtitle">Saldo general</h2>
+                <p id="totalSaldo">Saldo actual: $ 00.00</p>
+                <button id="verSaldo">Ver gastos</button>
+            </div>
+        </article>
+
+        <!-- Ventana modal VENTAS -->
+        <div id="modalVerVentas" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Reporte de Ventas</h2>
+                <table id="ventasTable">
+                    <thead>
+                        <tr>
+                            <th>Venta N°</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ventasTableBody">
+                        <!-- Filas de la tabla se agregarán dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="../scripts/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

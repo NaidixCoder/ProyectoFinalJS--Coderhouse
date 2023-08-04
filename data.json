@@ -1,0 +1,128 @@
+{
+    "items": [{
+            "Codigo": "RPM-01",
+            "Descripcion": "Retrovisor para moto",
+            "Precio": 49.99
+        },
+        {
+            "Codigo": "CBR-02",
+            "Descripcion": "Freno de disco",
+            "Precio": 79.99
+        },
+        {
+            "Codigo": "LL-03",
+            "Descripcion": "Llanta para moto",
+            "Precio": 99.99
+        },
+        {
+            "Codigo": "CF-04",
+            "Descripcion": "Cadena para moto",
+            "Precio": 29.99
+        },
+        {
+            "Codigo": "BL-05",
+            "Descripcion": "Bujía de encendido",
+            "Precio": 9.99
+        },
+        {
+            "Codigo": "SPK-06",
+            "Descripcion": "Kit de calcomanías",
+            "Precio": 19.99
+        },
+        {
+            "Codigo": "FL-07",
+            "Descripcion": "Filtro de aire",
+            "Precio": 14.99
+        },
+        {
+            "Codigo": "ES-08",
+            "Descripcion": "Escape deportivo",
+            "Precio": 149.99
+        },
+        {
+            "Codigo": "TR-09",
+            "Descripcion": "Tubo de escape",
+            "Precio": 69.99
+        },
+        {
+            "Codigo": "HG-10",
+            "Descripcion": "Guardabarros delantero",
+            "Precio": 39.99
+        },
+        {
+            "Codigo": "HP-11",
+            "Descripcion": "Protector de manos",
+            "Precio": 24.99
+        },
+        {
+            "Codigo": "LM-12",
+            "Descripcion": "Manillar de motocross",
+            "Precio": 79.99
+        },
+        {
+            "Codigo": "SB-13",
+            "Descripcion": "Soporte para smartphone",
+            "Precio": 19.99
+        },
+        {
+            "Codigo": "TC-14",
+            "Descripcion": "Tapa de combustible",
+            "Precio": 9.99
+        },
+        {
+            "Codigo": "SG-15",
+            "Descripcion": "Guardabarros trasero",
+            "Precio": 34.99
+        },
+        {
+            "Codigo": "MT-16",
+            "Descripcion": "Tubo de manillar",
+            "Precio": 14.99
+        },
+        {
+            "Codigo": "BS-17",
+            "Descripcion": "Asiento para moto",
+            "Precio": 69.99
+        },
+        {
+            "Codigo": "CP-18",
+            "Descripcion": "Pedales para moto",
+            "Precio": 24.99
+        },
+        {
+            "Codigo": "MV-19",
+            "Descripcion": "Válvula para neumáticos",
+            "Precio": 4.99
+        },
+        {
+            "Codigo": "CS-20",
+            "Descripcion": "Soporte para casco",
+            "Precio": 29.99
+        },
+        {
+            "Codigo": "CH-21",
+            "Descripcion": "Manija de freno",
+            "Precio": 14.99
+        },
+        {
+            "Codigo": "SP-22",
+            "Descripcion": "Suspensión trasera",
+            "Precio": 109.99
+        },
+        {
+            "Codigo": "PC-23",
+            "Descripcion": "Cubierta para motocicleta",
+            "Precio": 79.99
+        },
+        {
+            "Codigo": "PL-24",
+            "Descripcion": "Luces delanteras",
+            "Precio": 49.99
+        },
+        {
+            "Codigo": "PT-25",
+            "Descripcion": "Luz trasera",
+            "Precio": 19.99
+        }
+    ]
+}

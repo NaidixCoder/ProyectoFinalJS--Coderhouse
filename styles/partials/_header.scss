@@ -1,0 +1,42 @@
+.header{
+    height: 100px;
+    background-color: $bg-color;
+    @extend %displayflex;
+    justify-content: space-between;
+
+    .logo{
+        margin-left: 15%;
+        .logo__img{
+            width: 170px;
+        }
+    }
+
+    .nav{
+        margin-right: 15%;
+        .nav__ul{
+            @extend %displayflex;
+            list-style: none;
+            gap: 2rem;
+
+            .nav__a{
+                text-decoration: none;
+                color: $main-color;
+                text-transform: uppercase;
+                font-family: $second-font;
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                transition: .5s;
+
+                &:hover{
+                    color: #ff0;
+                    transition: .5s;
+                }
+            }
+            
+            .active{
+                color: #ff0;
+            }
+        }
+
+    }
+}
